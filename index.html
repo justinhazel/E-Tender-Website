@@ -7,26 +7,25 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      text-align: center;
       padding: 20px;
     }
     button {
-      margin: 5px;
       padding: 10px 20px;
+      margin: 10px;
       cursor: pointer;
     }
-    #output {
-      margin-top: 20px;
-      white-space: pre-wrap;
-      background: #f8f8f8;
+    pre {
+      text-align: left;
+      background: #f4f4f4;
       padding: 10px;
-      border: 1px solid #ddd;
+      overflow-x: auto;
     }
   </style>
 </head>
 <body>
   <h1>E-Tender API Data Viewer</h1>
 
-  <!-- Buttons for all endpoints -->
   <button id="fetchAccessToken">Fetch Access Token</button>
   <button id="fetchContractList">Fetch Contract List</button>
   <button id="fetchContractDetails">Fetch Contract Details</button>
@@ -35,8 +34,8 @@
   <button id="fetchStandingOfferNoticeList">Fetch Standing Offer Notice List</button>
   <button id="fetchStandingOfferNoticeDetails">Fetch Standing Offer Notice Details</button>
 
-  <!-- Output area -->
-  <div id="output">Click a button to fetch data.</div>
+  <h2>API Response</h2>
+  <pre id="output">Click a button to fetch data...</pre>
 
   <script src="script.js"></script>
 </body>
