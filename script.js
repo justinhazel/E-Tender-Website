@@ -4,7 +4,7 @@ document.getElementById('fetchData').addEventListener('click', async () => {
 
   try {
     // Replace with your Vercel API URL
-    const baseURL = 'https://e-tender-eight.vercel.app';
+    const baseURL = 'https://e-tender-r7edzd598-justins-projects-0c9bc3be.vercel.app/';
 
     // Fetch contract list
     const response = await fetch(`${baseURL}/contractlist?startRow=0`);
