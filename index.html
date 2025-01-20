@@ -3,13 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Tender API Browser</title>
+  <title>E-Tender API Data Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      background: #f8f8f8;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
   <h1>E-Tender API Data Viewer</h1>
 
-  <button id="fetchData">Fetch Contract List</button>
-  <div id="output" style="margin-top: 20px;"></div>
+  <!-- Buttons for all endpoints -->
+  <button id="fetchAccessToken">Fetch Access Token</button>
+  <button id="fetchContractList">Fetch Contract List</button>
+  <button id="fetchContractDetails">Fetch Contract Details</button>
+  <button id="fetchPlannedProcurementList">Fetch Planned Procurement List</button>
+  <button id="fetchPlannedProcurementDetails">Fetch Planned Procurement Details</button>
+  <button id="fetchStandingOfferNoticeList">Fetch Standing Offer Notice List</button>
+  <button id="fetchStandingOfferNoticeDetails">Fetch Standing Offer Notice Details</button>
+
+  <!-- Output area -->
+  <div id="output">Click a button to fetch data.</div>
 
   <script src="script.js"></script>
 </body>
