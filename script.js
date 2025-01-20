@@ -26,7 +26,7 @@ document.getElementById('fetchContractList').addEventListener('click', () => {
 });
 
 document.getElementById('fetchContractDetails').addEventListener('click', () => {
-  fetchData("etender/v1/contractdetails?CNUUID=sample_uuid"); // Replace "sample_uuid" with an actual value
+  fetchData("etender/v1/contractdetails?CNUUID=1"); // Replace "sample_uuid" with an actual value
 });
 
 document.getElementById('fetchPlannedProcurementList').addEventListener('click', () => {
@@ -34,7 +34,7 @@ document.getElementById('fetchPlannedProcurementList').addEventListener('click',
 });
 
 document.getElementById('fetchPlannedProcurementDetails').addEventListener('click', () => {
-  fetchData("etender/v1/plannedprocurementdetails?PlannedProcurementUUID=sample_uuid"); // Replace "sample_uuid" with an actual value
+  fetchData("etender/v1/plannedprocurementdetails?PlannedProcurementUUID=1"); // Replace "sample_uuid" with an actual value
 });
 
 document.getElementById('fetchStandingOfferNoticeList').addEventListener('click', () => {
@@ -42,5 +42,5 @@ document.getElementById('fetchStandingOfferNoticeList').addEventListener('click'
 });
 
 document.getElementById('fetchStandingOfferNoticeDetails').addEventListener('click', () => {
-  fetchData("etender/v1/standingoffernoticedetails?SONUUID=sample_uuid"); // Replace "sample_uuid" with an actual value
+  fetchData("etender/v1/standingoffernoticedetails?SONUUID=1"); // Replace "sample_uuid" with an actual value
 });
