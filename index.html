@@ -7,35 +7,30 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 20px;
       text-align: center;
-      padding: 20px;
     }
     button {
+      margin: 5px;
       padding: 10px 20px;
-      margin: 10px;
-      cursor: pointer;
+      font-size: 16px;
     }
-    pre {
+    #response {
+      margin-top: 20px;
+      white-space: pre-wrap;
       text-align: left;
-      background: #f4f4f4;
-      padding: 10px;
-      overflow-x: auto;
     }
   </style>
 </head>
 <body>
   <h1>E-Tender API Data Viewer</h1>
-
-  <button id="fetchAccessToken">Fetch Access Token</button>
-  <button id="fetchContractList">Fetch Contract List</button>
-  <button id="fetchContractDetails">Fetch Contract Details</button>
-  <button id="fetchPlannedProcurementList">Fetch Planned Procurement List</button>
-  <button id="fetchPlannedProcurementDetails">Fetch Planned Procurement Details</button>
-  <button id="fetchStandingOfferNoticeList">Fetch Standing Offer Notice List</button>
-  <button id="fetchStandingOfferNoticeDetails">Fetch Standing Offer Notice Details</button>
-
-  <h2>API Response</h2>
-  <pre id="output">Click a button to fetch data...</pre>
+  <button onclick="fetchData('/contractlist?startRow=0')">Fetch Contract List</button>
+  <button onclick="fetchData('/contractdetails?CNUUID=exampleUUID')">Fetch Contract Details</button>
+  <button onclick="fetchData('/')">Check API Status</button>
+  <div id="response">
+    <h2>API Response</h2>
+    <pre id="responseData"></pre>
+  </div>
 
   <script src="script.js"></script>
 </body>
